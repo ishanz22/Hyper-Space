@@ -1,6 +1,5 @@
 "use client"
-import React from 'react'
-import { useState, Suspense } from 'react'
+import React,{ useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { ContactShadows, Environment, OrbitControls } from '@react-three/drei'
 import Earth from "../../../public/Earth"
