@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const Button = ({ href, color, children }) => {
+interface ButtonProps {
+  href: string;
+  color: "blue" | "red" | "green"; // Define the accepted colors
+  children: React.ReactNode;
+}
+
+const Button = ({ href, color, children }: ButtonProps) => {
   const colorClasses = {
     blue: "bg-blue-500 hover:bg-blue-700",
     red: "bg-red-500 hover:bg-red-700",
